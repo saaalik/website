@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
 	<title>Md Salik</title>
 	<style>
-	*{
+	*{scroll-behavior: smooth;
 	margin:0;
 	padding:0;
 	}
@@ -88,7 +88,7 @@
 	margin-bottom:25px;
 	color:#fff;
 	font-weight: 900;
-	text-align:left;
+	text-align:center;
 	font-family:"Spartan",sans-serif;
 	}
 	.content,.projects{
@@ -135,6 +135,41 @@
 	margin-right: auto;
 	-webkit-filter: drop-shadow(5px 5px 5px #1c1c1a);
 	filter: drop-shadow(5px 5px 5px #1c1c1a);
+	}
+
+	
+	.grid {
+	margin: 0 auto;
+	max-width: 56em;
+	padding: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-auto-rows: minmax(200px, auto);
+	grid-gap: 2em;
+	}
+
+	.module {
+  	box-shadow: 5px 10px #363635;
+	background: #ce4a7e;
+	font-weight: 800;
+	color: #fff;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	font-family:"Spartan",sans-serif;
+	padding: 10px;
+	height: 200px;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	flex: 1 1 100px;
+	}
+	.module:hover {
+  	box-shadow: 2px 5px #585858;
+	background: #8a254e;
 	}
 
 	@media (max-width: 720px) {
@@ -220,10 +255,10 @@
 					<a href="D:\Programming\git\website\html\index.html">Home</a>
 				</li>
 				<li>
-					<a href="D:\Programming\git\website\html\about.html">About</a>
+					<a href="#about">About</a>
 				</li>
 				<li>
-					<a href="D:\Programming\git\website\html\projects.html">Projects</a>
+					<a href="#projects">Projects</a>
 				</li>
 			</ul>
 		</nav>
@@ -234,7 +269,7 @@
 	<div class="banner-bottom"></div>
 	
 	<div class="content">
-		<div class="heading">About!!</div>
+		<div class="heading" id="about">About!!</div>
 		<p>As an overly enthusiastic 15 year old problem solver, I stumbled upon coding through school,
 			not the most unconventional introduction but right off the bat, coding peaked my interest. The
 			adrenaline rush in writing a program and the sheer happiness of getting the correct output made
@@ -264,7 +299,21 @@
 	<div class="lang-bottom"></div>
 
 	<div class="projects">
-		<div class="heading">Projects!!</div>
+		<div class="heading" id="projects">Projects!!</div>
+		
+		<div class="grid">
+  
+			<div class="module">PROJECT 1</div>
+			<div class="module">PROJECT 2</div>
+			<div class="module">PROJECT 3</div>
+			<div class="module">PROJECT 4</div>
+			<div class="module">PROJECT 5</div>
+			<div class="module">PROJECT 6</div>
+			<div class="module">PROJECT 7</div>
+			<div class="module">PROJECT 8</div>
+			<div class="module">PROJECT 9</div>
+			<div class="module">PROJECT 10</div>
+		  </div>
 	</div>
 
 	<div class="banner-top-links"></div>
